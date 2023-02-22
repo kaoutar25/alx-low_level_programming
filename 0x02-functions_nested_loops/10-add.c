@@ -1,9 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 
-/** main check  the code
- * Return: always 0
+/**
+ * add - adds two integers and return the result
+ * @a: int to be add to b
+ * @b: int to be add to a
+ * Return: sum of a and b
  */
-int main(void)
+int add(int a, int b)
 {
-	int n;
+	int c;
 
+	c = a + b;
+	return (c);
+}
