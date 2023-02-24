@@ -5,22 +5,18 @@
 
 /* Betty style doc for function main goes there */
 /**
- * main - Entry point
+ * positive_or_negative  - Entry point
+ * @i: integer
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int positive_or_negative(int i)
 {
-        int n;
-
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
-        /* your code goes there */
-        if (n > 0)
-                printf("%d is positive\n", n);
-        else if (n == 0)
-                printf("%d is zero\n", n);
+        if (i > 0)
+                printf("%d is positive\n", i);
+        else if (i == 0)
+                printf("%d is zero\n", i);
         else
-                printf("%d is negative\n", n);
+                printf("%d is negative\n", i);
         return (0);
 }
